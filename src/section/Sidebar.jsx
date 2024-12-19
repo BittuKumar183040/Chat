@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { AiFillAlert, AiFillCar } from 'react-icons/ai';
-import { HiAcademicCap } from 'react-icons/hi2';
-import { GoCopilot } from 'react-icons/go';
-import { FaBars } from 'react-icons/fa6';
+import React, { useState } from "react";
+import { AiFillAlert, AiFillCar } from "react-icons/ai";
+import { HiAcademicCap } from "react-icons/hi2";
+import { GoCopilot } from "react-icons/go";
+import { FaBars } from "react-icons/fa6";
 
 const MenuItem = ({ title, logo }) => {
   return (
@@ -19,13 +19,13 @@ const Sidebar = () => {
   const [isHidden, setIsHidden] = useState(false);
   return (
     <div
-      className={`bg-white-400 ${isHidden ? 'w-20' : 'w-52'} h-full transition-all overflow-hidden shadow-md select-none list-none flex flex-col justify-between
+      className={`bg-white-400 ${isHidden ? "w-20" : "w-52"} h-full transition-all overflow-hidden shadow-md select-none list-none flex flex-col justify-between
       dark:bg-gray-800 dark:text-white
       `}
     >
       <div>
         <div
-          className={`flex ${isHidden ? ' justify-center' : 'justify-between'} py-3 px-2 items-center border-b-2`}
+          className={`flex ${isHidden ? " justify-center" : "justify-between"} py-3 px-2 items-center border-b-2`}
         >
           {!isHidden && <p className=" text-sm">Contacts</p>}
           <FaBars
@@ -35,10 +35,10 @@ const Sidebar = () => {
           />
         </div>
         <div className=" flex flex-col gap-4 pl-2 py-2">
-          <MenuItem title={!isHidden ? 'Olivia' : ' '} logo={<AiFillAlert />} />
-          <MenuItem title={!isHidden ? 'Amelia' : ' '} logo={<AiFillCar />} />
-          <MenuItem title={!isHidden ? 'Emma' : ' '} logo={<HiAcademicCap />} />
-          <MenuItem title={!isHidden ? 'Noah' : ' '} logo={<GoCopilot />} />
+          <MenuItem title={!isHidden ? "Olivia" : " "} logo={<AiFillAlert />} />
+          <MenuItem title={!isHidden ? "Amelia" : " "} logo={<AiFillCar />} />
+          <MenuItem title={!isHidden ? "Emma" : " "} logo={<HiAcademicCap />} />
+          <MenuItem title={!isHidden ? "Noah" : " "} logo={<GoCopilot />} />
         </div>
       </div>
       <div className="text-center mb-2 dark:bg-gray-900 dark:text-white bg-white py-2">

@@ -1,24 +1,24 @@
-import React, { memo, useState, useEffect, useRef } from 'react';
-import socket from '../socket/socket';
+import React, { memo, useState, useEffect, useRef } from "react";
+import socket from "../socket/socket";
 
 const Chats = () => {
   const [msg, setMsg] = useState();
   const container = useRef();
   const messages = useRef();
-  const selfId = localStorage.getItem('self');
-  socket.on('chat', (msg) => {
+  const selfId = localStorage.getItem("self");
+  socket.on("chat", (msg) => {
     setMsg(msg);
   });
   useEffect(() => {
     if (msg) {
       console.log(msg);
-      const li = document.createElement('li');
-      const p = document.createElement('p');
+      const li = document.createElement("li");
+      const p = document.createElement("p");
       console.log(msg.user, selfId);
       if (msg.user === selfId) {
-        li.classList.add('myself');
+        li.classList.add("myself");
       } else {
-        li.classList.add('other');
+        li.classList.add("other");
       }
       p.innerHTML = msg.message;
       li.appendChild(p);

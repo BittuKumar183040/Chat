@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,7 +6,7 @@
 * {
   @apply transition-colors duration-200;
   /* font-family: "Lato", sans-serif; */
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 body.dark {
   background-color: rgba(0, 0, 0, 0.93);
@@ -42,7 +42,7 @@ body.dark {
   border-radius: 0 10px 10px 10px;
 }
 .other::before {
-  content: '';
+  content: "";
   position: absolute;
   left: -10px;
   top: 0;
@@ -61,7 +61,7 @@ body.dark {
   border-radius: 10px 0px 10px 10px;
 }
 .myself::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -10px;
   top: 0;

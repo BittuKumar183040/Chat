@@ -1,17 +1,18 @@
-import React from 'react';
-import socket from '../socket/socket';
-import Chats from './Chats';
+import React from "react";
+import socket from "../socket/socket";
+import Chats from "./Chats";
 
 const ChatBox = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
-    const msg = formData.get('msg');
+    const adminUser = localStorage.getItem("self");
+    const msg = formData.get("msg");
     if (msg.length < 1) {
       console.log("Don't do this");
       return;
     }
-    socket.emit('chat', msg);
+    socket.emit(adminUser, msg);
     e.target.reset();
   };
 
