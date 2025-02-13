@@ -1,5 +1,7 @@
 import React from "react";
 import NavBar from "../components/NavBar";
+import { BiChat } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -18,12 +20,14 @@ const Landing = () => {
               data transfer with <i>99.999%</i> of deta Privacy
             </p>
           </div>
+          <Link to="/chat">
+            <div className=" flex items-center gap-3 p-2 px-4 shadow-md cursor-pointer bg-red-400 text-white dark:bg-gray-600 rounded-md mt-10">
+              <BiChat className=" inline-block" size={20} />
+              <p>Start Chatting</p>
+            </div>
+          </Link>
         </div>
-        <div className=" absolute w-full bg-slate-300 flex justify-center">
-          <div className=" h-40 w-40 bg-slate-400"></div>
-          <div className=" h-40 w-40 bg-slate-400"></div>
-          <div className=" h-40 w-40 bg-slate-400"></div>
-        </div>
+
       </div>
     </div>
   );

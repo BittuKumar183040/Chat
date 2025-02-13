@@ -3,6 +3,7 @@ import socket from "../socket/socket";
 import Chats from "./Chats";
 
 const ChatBox = () => {
+  console.log("first");
   const handleFormSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);

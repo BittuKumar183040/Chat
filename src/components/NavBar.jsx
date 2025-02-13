@@ -3,7 +3,7 @@ import ThemeSwithButton from "./ThemeSwithButton";
 
 const NavBar = () => {
   return (
-    <div className=" min-h-14 dark:bg-gray-800 p-2 flex justify-between gap-20 md:gap-48 items-center border-b-2 ">
+    <div className=" min-h-14 dark:bg-gray-800 p-2 flex justify-between rounded-b-md gap-20 md:gap-48 items-center border-b-2 ">
       <div className="flex items-center gap-2 cursor-pointer">
         <img className=" h-7" src="./logo.svg" />
         <p className=" font-bold text-blue-700">
